@@ -3,7 +3,7 @@
 int main(){
     int  b,c , sum, sub, mul,mod ;
     float a, div;
-    scanf("%f %d %d",&a,&b,&c);
+    scanf("%f  %d  %d",&a,&b,&c);
     sum = a+b;
     sub = a-b;
     mul = a*b;
