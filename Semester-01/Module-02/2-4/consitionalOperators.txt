@@ -1,0 +1,8 @@
+## And operator &&
+if two condition are correct then and condition gives the answer two , if one is false then the whole condition is false
+
+## OR operator ||
+if one condition of two are correct then the condition is true if both condition are false then the condition is false 
+
+## NOT operator !
+if not operator is given before True then the condition will be false if it's given before False then the condition will be True
