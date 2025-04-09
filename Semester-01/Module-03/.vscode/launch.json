@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/WALTON/OneDrive/Desktop/Phitron/Semester-01/Module-03",
-      "program": "c:/Users/WALTON/OneDrive/Desktop/Phitron/Semester-01/Module-03/build/Debug/outDebug",
+      "cwd": "c:/Users/WALTON/OneDrive/Desktop/Phitron/Semester-01/Module-03/3-11 Break",
+      "program": "c:/Users/WALTON/OneDrive/Desktop/Phitron/Semester-01/Module-03/3-11 Break/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
