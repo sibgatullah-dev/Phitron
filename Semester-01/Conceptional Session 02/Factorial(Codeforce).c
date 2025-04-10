@@ -4,13 +4,13 @@ int main(){
   scanf("%d",&T);
   for (int tc = 1; tc <= T; tc++)
   {
-    int N , f;
-    scanf("%d",&N);
+    long long int N , f;
+    scanf("%lld",&N);
     f = 1;
-    for(int i =N;i>0;i--){
+    for(long long int i =N;i>0;i--){
         f = f*i;
     }
-    printf("%d\n",f);
+    printf("%lld\n",f);
   }
   
     return 0;
