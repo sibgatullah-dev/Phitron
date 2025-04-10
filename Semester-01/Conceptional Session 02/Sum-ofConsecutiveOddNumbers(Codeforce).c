@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main(){
     int x,y,T;
-    scanf("%d %d %d",&T,&x,&y);
+    scanf("%d",&T);
    for (int tc = 1; tc <= T; tc++)
    {
     scanf("%d %d",&x,&y);
