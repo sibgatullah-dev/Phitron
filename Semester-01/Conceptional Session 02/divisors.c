@@ -1,17 +1,18 @@
-//Codeforce
-//print the divisors of N
-
-#include <stdio.h>
+#include<stdio.h>
 int main(){
-    int n, count;
+    int n,N,j;
     scanf("%d",&n);
-    for(int i=1; i<=n; i++){
-        if(n%i==0){
-            printf("%d\n",i);
-            count++;
-        }
+    N=n/2;
+    j=N;
+    for(int i = 1;i<=N;i++){
+       for(j = N; j >= 1; j--){
+            if (N*i==n)
+            {
+                printf("%d\n%d\n",j,i);
+            }
+        
+       }
     }
-    printf("Total count is %d",count);
-
     return 0;
 }
+//Bugged code , still not solved...
