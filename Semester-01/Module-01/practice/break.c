@@ -6,7 +6,7 @@ int main(){
         if(i==6){
             break;
         }
-        printf("%d",i);// it will print only 5 cause when i =  the loop will get break and 6 won't get print!!
+        printf("%d\t",i);// it will print only 5 cause when i =  the loop will get break and 6 won't get print!!
     }
     return 0;
 }
