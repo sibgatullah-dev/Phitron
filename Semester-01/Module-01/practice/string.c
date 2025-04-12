@@ -4,7 +4,7 @@ int main(){
      char *str = "Hellow, World"; // Points to a string literal (read-only)
      char *country = "Bangladesh";
      char name[]= "Sibgatullah";// Automatically adds the null character at the end (\0)->Null character used as end token like return 0
-     char list[6]={'H','e','l','l','o','\0'};// Explicitly adding the null character
+     char list[6]={'H','e','l','l','o','\0'};// Explicitly adding the null character (\0)->Null character
      printf("%s\n%s\n%s\n%s",str,country,name,list);
     return 0;
 }
