@@ -8,7 +8,7 @@ int main(){
         Y=Y+32;
         printf("%c",Y);
     }
-    else if(Y>96){
+    else{
         Y=Y-32;
         printf("%c",Y);
     }
