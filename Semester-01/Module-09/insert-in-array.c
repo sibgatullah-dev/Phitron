@@ -5,12 +5,23 @@ int main(){
     int a[n+1];
     for (int i = 0; i < n; i++)
     {
-        scanf("%d",a[i]);
+        scanf("%d",&a[i]);
     }
-    int index,val;
-    scanf("%d %d",index,val);
+    int idx,val;
+    scanf("%d %d",&idx,&val);
 
-    a[in]
+    for (int i = n; i >= idx+1; i--)
+    {
+        a[i]=a[i-1];
+    }
+    a[idx]=val;
+
+    for (int i = 0; i <= n; i++)
+    {
+        printf("%d ",a[i]);
+    }
+    
+    
     
     return 0;
 }
