@@ -4,8 +4,7 @@ int main(){
     char s[100];
     scanf("%s",&s);
 
-    int sz=strlen(s);// Built in function for counting length of a string
-
-    printf("%d",sz);
+    // Built in function for counting length of a string
+    printf("%d",strlen(s));
     return 0;
 }
