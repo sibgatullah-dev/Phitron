@@ -3,7 +3,7 @@
 int main(){
     char a[101];scanf("%s",&a);
     char b[101];scanf("%s",&b);
-    strcat(a,b);
+    strcat(a,b);//a+b
     printf("%s",a);
     return 0;
 }
