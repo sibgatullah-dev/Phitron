@@ -1,3 +1,4 @@
+// strcmp function which gives value less then 0 if a is small value greater then 0 if b  is small and value 0 if both are same 
 #include<stdio.h>
 int main(){
     char a[101],b[101];
