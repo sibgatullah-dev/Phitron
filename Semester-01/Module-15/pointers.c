@@ -4,7 +4,7 @@ int main(){
     printf("%d\n",x);
 
     int* ptr;
-    ptr = &x;//& andpercent or address of.
+    ptr = &x; //& andpercent or address of.
     printf("%p\n",ptr);
     printf("%d\n",*ptr);
     *ptr=20;
