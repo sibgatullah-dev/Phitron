@@ -5,9 +5,9 @@ int main(){
 
     int* ptr;
     ptr = &x; //& andpercent or address of.
-    printf("%p\n",ptr);
-    printf("%d\n",*ptr);
+    printf("%p\n", ptr);
+    printf("%d\n", *ptr);
     *ptr=20;
-    printf("%d\n",x);
+    printf("%d\n", x);
     return 0;
 }
