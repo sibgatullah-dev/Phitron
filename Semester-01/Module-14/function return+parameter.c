@@ -4,7 +4,7 @@ int sum(int a,int b){
     int add= a+b;
     return add;
 }
-int sub(int a,int b){
+int sub(int a , int b){
     int minus = a-b;
     return minus;
 }
