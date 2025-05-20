@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 void print_array(int a[],int n, int i){
-    if (i==n)
+    if (i==n) // the ending condition of a recursive function is called base case
     {
         return;
     }
