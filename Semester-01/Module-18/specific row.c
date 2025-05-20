@@ -11,14 +11,10 @@ int main(){
         
     }
     
-    for (int i = 0; i < r; i++)
+    int specific_row;scanf("%d",&specific_row);
+    for (int i = 0; i < c; i++)
     {
-        for (int j = 0; j < c; j++)
-        {
-            printf("%d ",a[i][j]);
-        }
-        
-        printf("\n");
+       printf("%d ",a[specific_row][i]);
     }
     
     
