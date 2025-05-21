@@ -6,7 +6,6 @@ int main(){
     {
         top=6;
     }
-    
     if (n==3)
     {
         top=7;

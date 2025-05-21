@@ -1,3 +1,4 @@
+// 2D array is an array with row and column like X and Y axis or we can visualize it as matrix 
 #include<stdio.h>
 int main(){
     int r,c ; scanf("%d %d",&r , &c );
