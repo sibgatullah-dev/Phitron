@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int *fun(){
+int *fun(){//Array returns as pointer that's why its int*fun() not int fun() .
     int *a=new int[5];
     for (int i = 0; i < 5; i++)
     {
