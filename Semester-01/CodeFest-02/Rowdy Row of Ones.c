@@ -26,7 +26,7 @@ int main(){
         if (count>ones)
         {
             ones = count;
-            index = i;
+            index++;
         }
        
     }
