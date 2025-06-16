@@ -20,6 +20,6 @@ int main(){
     cout<<sakib.name<<endl;
     sakib.hello();
     student rakib("Rakib Ahmed",21);
-    rakib.hello();
+    rakib.hello(); 
     return 0;
 }
