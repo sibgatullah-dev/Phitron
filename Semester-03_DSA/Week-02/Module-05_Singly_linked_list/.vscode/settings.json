@@ -58,6 +58,7 @@
   "C_Cpp_Runner.msvcSecureNoWarnings": false,
   "files.associations": {
     "ostream": "cpp",
-    "linked_list_with_constructior": "cpp"
+    "linked_list_with_constructior": "cpp",
+    "iostream": "cpp"
   }
 }
