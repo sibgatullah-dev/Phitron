@@ -11,10 +11,11 @@ class Node{
     }
 };
 
-void insert_in_tail(Node* &head, int val){
+void insert_in_tail(Node* &head,Node* &tail, int val){
     Node* newnode = new Node(val);
     if(head==NULL){
         head = newnode;
+        tail = newnode;
         return;
     }
 
@@ -23,7 +24,8 @@ void insert_in_tail(Node* &head, int val){
     {
         tmp = tmp->next;
     }
-    tmp->next = newnode;
+    tail->next = newnode;
+    tail = newnode;
     
 }
 
@@ -41,14 +43,14 @@ int main(){
     Node* head = new Node(10);
     Node* a = new Node(20);
     Node* b = new Node(30);
-    Node* c = new Node(40);
+    Node* tail = new Node(40);
 
     head->next = a;
     a->next = b;
-    b->next = c;
-    insert_in_tail(head,50);
-    insert_in_tail(head,60);
-    insert_in_tail(head,70);
+    b->next = tail;
+    insert_in_tail(head,tail,50);
+    insert_in_tail(head,tail,60);
+    insert_in_tail(head,tail,70);
     print_linked_list(head);
     return 0;
 }
