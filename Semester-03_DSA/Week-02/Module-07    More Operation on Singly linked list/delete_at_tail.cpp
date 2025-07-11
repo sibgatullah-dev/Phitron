@@ -28,7 +28,7 @@
     
 }
 
-void delete_at_any_pos(Node* &head,int idx,Node* &tail){
+void delete_at_tail(Node* &head,int idx,Node* &tail){
     Node* tmp = head;
     for (int i = 1; i < idx; i++)
     {
@@ -66,8 +66,10 @@ void print_linked_list(Node* head){
     }
     cout<<"input the index of the node :"<<endl;
     int idx;cin>>idx;
-    delete_at_any_pos(head,idx,tail);
+    cout<<"tail before deleting :"<<tail->val<<endl;
+    delete_at_tail(head,idx,tail);
     print_linked_list(head);
+    cout<<"tail after deleting :"<<tail->val<<endl;
 
     return 0;
   }
