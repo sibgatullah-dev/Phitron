@@ -33,12 +33,19 @@ void print_backward(Node* tail){
     
 }
 
+void insert_at_head(Node* &head, int val){
+    Node* newnode = new Node(val);
+    newnode->next = head;
+    head->prev = newnode;
+    head = newnode;
+}
+
 int main(){
     Node* head = new Node(10);
     Node* a = new Node(20);
     Node* b = new Node(30);
     Node* tail = new Node(40);
-    Node* g = new Node(100);
+    
 
     head->next = a;
 
@@ -50,11 +57,8 @@ int main(){
     
     tail->prev = b;
 
-    g->next = head;
-    head->prev = g;
-
-    head = g;
-
+    insert_at_head(head,100);
+  
     print_forward(head);
     cout<<"\n"<<endl;
     print_backward(tail);
