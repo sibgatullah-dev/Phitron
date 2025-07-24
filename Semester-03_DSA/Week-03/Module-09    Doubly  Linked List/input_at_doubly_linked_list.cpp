@@ -5,9 +5,11 @@ class Node{
     public:
     int val;
     Node* next;
+    Node* prev;
     Node(int val){
-        this->val = val;
+        this->val  = val;
         this->next = NULL;
+        this->prev = NULL;
     }
 };
 
@@ -19,11 +21,7 @@ void insert_in_tail(Node* &head,Node* &tail, int val){
         return;
     }
 
-    Node* tmp = head;
-    while (tmp->next!=NULL)
-    {
-        tmp = tmp->next;
-    }
+    newnode->prev = tail;
     tail->next = newnode;
     tail = newnode;
     
@@ -33,28 +31,25 @@ void print_linked_list(Node* head){
     Node* temp = head;
     while (temp != NULL)
     {
-        cout<< temp->val<<'\t';
+        cout<< temp->val<<endl;
         temp = temp->next;
     }
     
 }
 
-void reverse_liknked_list(Node* &head,Node* &tmp,Node* &tail){
-    if (tmp->next == NULL)
+void print_backward(Node* tail){
+    Node* tmp = tail;
+    while (tmp!=NULL)
     {
-        head = tmp;
-        return;
+        cout<<tmp->val<<endl;
+        tmp = tmp->prev;
     }
-    reverse_liknked_list(head,tmp->next,tail);
-    tmp->next->next = tmp;
-    tmp->next = NULL;
-    tail = tmp;
+    
 }
 
 int main(){
     Node* head = NULL;
     Node* tail = NULL;
-
     int val;
     while (true)
     {
@@ -65,10 +60,9 @@ int main(){
         insert_in_tail(head,tail,val);
     }
     
-    reverse_liknked_list(head,head,tail);
     print_linked_list(head);
     cout<<endl;
-    cout<<head->val<<endl;
-    cout<<tail->val<<endl;
+    print_backward(tail);
+
     return 0;
 }
