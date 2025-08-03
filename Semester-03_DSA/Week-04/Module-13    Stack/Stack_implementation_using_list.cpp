@@ -3,7 +3,7 @@ using namespace std;
 class myStack
 {
     public:
-    list<int> l; // taking the stack with lector 
+    list<int> l; // taking the stack with vector 
 
     void push(int lal){
         l.push_back(lal);
