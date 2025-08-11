@@ -25,8 +25,8 @@ Node* level_input(){
     q.pop();
     int l,r;cin>>l>>r;
     Node* left,*right;
-    left = new Node(l);
-    right = new Node(r);
+    if(l == -1)left = NULL;else left = new Node(l);
+    if(r == -1)right = NULL;else right = new Node(r);
 
     f->left = left;
     f->Right = right;

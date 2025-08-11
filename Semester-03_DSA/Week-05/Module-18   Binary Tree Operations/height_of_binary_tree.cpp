@@ -4,11 +4,11 @@ class Node{
     public:
     int val;
     Node* left;
-    Node* Right;
+    Node* right;
     Node(int val){
         this->val = val;
         this->left = NULL;
-        this->Right = NULL;
+        this->right = NULL;
     }
 };
 
@@ -27,27 +27,27 @@ Node* level_input(){
     Node* left,*right;
     if(l == -1)left = NULL;else left = new Node(l);
     if(r == -1)right = NULL;else right = new Node(r);
-
+    
     f->left = left;
-    f->Right = right;
+    f->right = right;
 
     if(f->left)q.push(f->left);
-    if(f->Right)q.push(f->Right);
+    if(f->right)q.push(f->right);
    }
    return root;
    
 }
 
-int count_leaf_node(Node *root){
+int height(Node *root){
     if(root == NULL)return 0;
-    if(root->left == NULL && root->Right == NULL)return 1;
-    int l = count_leaf_node(root->left);
-    int r = count_leaf_node(root->Right);
-    return l+r;
+    if(root->left == NULL && root->right==NULL)return 0;
+    int l = height(root->left);
+    int r = height(root->right);
+    return max(l,r)+1;
 }
 
 int main(){
     Node* root = level_input();
-    cout<<count_leaf_node(root);
+    cout<<height(root);
     return 0;
 }
