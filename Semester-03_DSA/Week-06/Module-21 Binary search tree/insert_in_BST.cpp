@@ -56,20 +56,20 @@ void level_order(Node* root){
     }
 }
 
-void insert(Node* &root, int val){
+void insertNode(Node* &root, int val){
     if(root == NULL)root = new Node(val);
 
     if(root->val > val){
         if(root->left == NULL){
             root->left = new Node(val);
         }else{
-            insert(root->left,val);
+            insertNode(root->left,val);
         }
     }else{
         if(root->right == NULL){
             root->right = new Node(val);
         }else{
-            insert(root->right,val);
+            insertNode(root->right,val);
         }
     }
 }
@@ -77,7 +77,7 @@ void insert(Node* &root, int val){
 int main(){
     Node* root = input_tree();
     int val;cin>>val;
-    insert(root,val);
+    insertNode(root,val);
     level_order(root);
     return 0;
 }
