@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-    set<int> s;
+    set<int> s; // set follows balanced bst by arranging the BST by it's self
     int n; cin>>n;
     for (int i = 0; i < n; i++)
     {
