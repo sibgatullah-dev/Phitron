@@ -14,7 +14,7 @@ class Node{
 };
 
 void level_order(Node* root){
-     queue<Node*>q;
+    queue<Node*>q;
     q.push(root);
     while (!q.empty())
     {
