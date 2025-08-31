@@ -1,26 +1,34 @@
 #include<bits/stdc++.h>
 using namespace std; 
 
+int row,col;
 char grid[105][105];
 bool visit[105][105];
 vector<pair<int,int>>direction = {{-1,0},{1,0},{0,-1},{0,1}};
 
+bool valid(int r, int c){
+    if(r<0||r>=row||c<0||c>= col)
+        return false;
+
+    return true;
+}
 
 void dfs(int srow,int scol)
 {
-    cout<< grid[srow][scol]<<" ";
+    cout << srow << " " << scol <<endl;
     visit[srow][scol] = true;
     for(int i = 0; i<4;i++){
         int crow,ccol;
         crow = srow + direction[i].first;
         ccol = scol + direction[i].second;
-        cout<<crow<<" "<<ccol;
+        if(valid(crow,ccol) == true && !visit[crow][ccol])
+            dfs(crow,ccol);
     }
 
 }
 
 int main(){
-    int row,col;cin>>row>>col;
+    cin>>row>>col;
     
     for (int i = 0; i < row; i++)
     {
@@ -32,6 +40,7 @@ int main(){
     }
 
     int srow,scol;cin>>srow>>scol;
+    memset(visit,false,sizeof(visit));
     dfs(srow,scol);
 
     return 0;
