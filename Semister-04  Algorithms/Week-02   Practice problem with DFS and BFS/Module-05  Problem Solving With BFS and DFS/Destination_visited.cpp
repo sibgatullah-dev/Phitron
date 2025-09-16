@@ -3,7 +3,7 @@ public:
     vector<int> adj_list[200005];
     bool visit[200005];
 
-   void dfs(int src){
+   void dfs(int src){// depth traversal
         visit[src] = true;
         for(int child: adj_list[src]){
             if(!visit[child]){
